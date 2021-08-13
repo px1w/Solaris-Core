@@ -1,7 +1,7 @@
 # Solaris-Core
 
 
-First plugin I made, designed for my SMP server.
+First plugin I made for paper, designed for my SMP server. 
 
 
 ##### Version 1.0.0
