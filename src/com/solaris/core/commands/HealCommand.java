@@ -14,13 +14,16 @@ public class HealCommand implements CommandExecutor {
             return true;
         }
         Player player = (Player) sender;
+        if (player.hasPermission("solariscore.feed")) {
 
 
-        // Heal command
-        if (cmd.getName().equalsIgnoreCase("heal"))
-            player.setHealth(20);
-        player.sendMessage(ChatColor.LIGHT_PURPLE + "Player healed!");
+            // Heal command
+            if (cmd.getName().equalsIgnoreCase("heal"))
+                player.setHealth(20);
+            player.sendMessage(ChatColor.LIGHT_PURPLE + "Player healed!");
 
+            return true;
+        }
         return true;
     }
 }
